@@ -1,0 +1,38 @@
+.nav-link {
+  /*background-color: white;*/
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  justify-self: flex-start;
+  transition:
+    transform 0.35s ease,
+    color 0.35s ease;
+  font-family: var(--inter-semibold);
+  font-size: var(--a-size);
+  height: 1.3rem;
+}
+
+.line {
+  height: 3px;
+  width: 10%;
+  background-color: var(--dark-green);
+  margin-left: auto;
+  transition: width 0.35s ease;
+  border-radius: 20px;
+}
+
+a:hover + .line {
+  width: 100%;
+}
+
+a:hover {
+  color: var(--dark-green);
+  transform: translateX(5px);
+}

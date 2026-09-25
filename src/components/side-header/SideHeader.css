@@ -1,0 +1,56 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100dvh;
+  overflow-y: auto;
+  padding-top: 3rem;
+  width: fit-content;
+  gap: 2rem;
+  margin: auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.hero-logo img {
+  width: 8rem;
+}
+
+.header-texts {
+  text-align: left;
+}
+
+.header-texts h1,
+.header-texts h2,
+.header-texts h3 {
+  padding: 0;
+  margin: 0;
+}
+
+.header-texts h1 {
+  font-family: var(--inter-bold);
+  color: var(--dark-green);
+  font-size: var(--h1-size);
+  margin-bottom: 0.7rem;
+}
+
+.header-texts h2 {
+  font-family: var(--inter-semibold);
+  color: var(--light-green);
+  font-size: var(--h2-size);
+}
+
+.header-texts h3 {
+  font-family: var(--inter-medium);
+  color: var(--faded-green);
+  font-size: var(--h3-size);
+  margin-top: 0.3rem;
+}
+.nav-links {
+  width: 100%;
+}
