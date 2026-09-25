@@ -2,10 +2,26 @@ import "./SideHeader.css";
 import NavLink from "../nav-link/NavLink.jsx";
 import HeroSvg from "../hero-svg/HeroSvg.jsx";
 import ButtonFilled from "../button-filled/ButtonFilled.jsx";
-import { useState } from "react";
 import heroImage from "../../assets/hero-logo.png";
+import {
+  LinkedInIcon,
+  FacebookIcon,
+  InstagramIcon,
+  YoutubeIcon,
+  GithubIcon,
+  DiscordIcon,
+} from "../socials-svgs/SocialsSVGs.jsx";
 
 function SideHeader() {
+  const socialLinks = [
+    { name: "Facebook", Icon: FacebookIcon, link: "#" },
+    { name: "GitHub", Icon: GithubIcon, link: "#" },
+    { name: "LinkedIn", Icon: LinkedInIcon, link: "#" },
+    { name: "Instagram", Icon: InstagramIcon, link: "#" },
+    { name: "YouTube", Icon: YoutubeIcon, link: "#" },
+    { name: "Discord", Icon: DiscordIcon, link: "#" },
+  ];
+
   const labels = [
     { label: "About", link: "#" },
     { label: "Experience", link: "#" },
@@ -29,9 +45,23 @@ function SideHeader() {
         </div>
       </div>
       <div className="nav-links">
-        {labels.map((item) => (
-          <NavLink label={item.label} link={item.link} />
+        {labels.map(({ label, link }) => (
+          <NavLink label={label} link={link} />
         ))}
+      </div>
+      <div className="head-footer">
+        <div className="btn-cont">
+          <ButtonFilled label="Let's Build" />
+        </div>
+        <ul className="social-links">
+          {socialLinks.map(({ name, Icon, link }) => (
+            <li key={name}>
+              <a href={link} aria-label={name}>
+                <Icon className="social-icon" />
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </aside>
   );

@@ -7,32 +7,32 @@
   gap: 2rem;
 }
 
-a {
+.nav-link a {
   text-decoration: none;
   color: black;
   justify-self: flex-start;
   transition:
-    transform 0.35s ease,
-    color 0.35s ease;
+    transform 0.2s ease,
+    color 0.2s ease;
   font-family: var(--inter-semibold);
-  font-size: var(--a-size);
+  font-size: var(--h2-size);
   height: 1.3rem;
 }
 
 .line {
-  height: 3px;
+  height: 4px;
   width: 10%;
   background-color: var(--dark-green);
   margin-left: auto;
-  transition: width 0.35s ease;
+  transition: width 0.3s ease;
   border-radius: 20px;
 }
 
-a:hover + .line {
+.nav-link a:hover + .line {
   width: 100%;
 }
 
-a:hover {
+.nav-link a:hover {
   color: var(--dark-green);
   transform: translateX(5px);
 }
