@@ -37,6 +37,12 @@
   --inter-semibold: "Inter-Semibold";
   --inter-bold: "Inter-Bold";
 
+  --letter-spacing: 0.05rem;
+  --letter-spacing2: 0.03rem;
+
+  /*Colors*/
+  --darkest-green: #002511;
+
   --bg: radial-gradient(#014923, #002511);
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
