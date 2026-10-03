@@ -15,26 +15,35 @@ import {
 function SideHeader() {
   const socialLinks = [
     { name: "Facebook", Icon: FacebookIcon, link: "#" },
-    { name: "GitHub", Icon: GithubIcon, link: "#" },
-    { name: "LinkedIn", Icon: LinkedInIcon, link: "#" },
+    {
+      name: "GitHub",
+      Icon: GithubIcon,
+      link: "https://github.com/jethrosala9",
+    },
+    {
+      name: "LinkedIn",
+      Icon: LinkedInIcon,
+      link: "https://www.linkedin.com/in/jethro-sala-131648279/",
+    },
     { name: "Instagram", Icon: InstagramIcon, link: "#" },
     { name: "YouTube", Icon: YoutubeIcon, link: "#" },
     { name: "Discord", Icon: DiscordIcon, link: "#" },
   ];
 
   const labels = [
-    { label: "About", link: "#" },
-    { label: "Experience", link: "#" },
-    { label: "Projects", link: "#" },
+    { label: "About", link: "#about" },
+    { label: "Experience", link: "#experience" },
+    { label: "Projects", link: "#projects" },
   ];
 
   const skills = [
     "CSS",
-    "3D Modelling",
+    "CAD / 3D Engineering",
     "HTML",
     "JavaScript",
     "React JS",
     "React Native",
+    "Hardware & Electronics",
   ];
 
   return (
@@ -60,9 +69,12 @@ function SideHeader() {
       </div>
       <div className="skills-container">
         {skills.map((item) => (
-          <div className="skill-card">{item}</div>
+          <div className="skill-card">
+            <h5 className="skill-card-text">{item}</h5>
+          </div>
         ))}
       </div>
+      <hr></hr>
       <div className="head-footer">
         <div className="btn-cont">
           <ButtonFilled label="Let's Build" />
@@ -70,7 +82,7 @@ function SideHeader() {
         <ul className="social-links">
           {socialLinks.map(({ name, Icon, link }) => (
             <li key={name}>
-              <a href={link} aria-label={name}>
+              <a href={link} aria-label={name} target="_blank">
                 <Icon className="social-icon" />
               </a>
             </li>

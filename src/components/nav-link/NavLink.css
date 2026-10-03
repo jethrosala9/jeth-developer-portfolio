@@ -9,20 +9,20 @@
 
 .nav-link a {
   text-decoration: none;
-  color: black;
+  color: var(--faded-green);
   justify-self: flex-start;
   transition:
     transform 0.2s ease,
     color 0.2s ease;
-  font-family: var(--inter-semibold);
-  font-size: var(--h2-size);
+  font-family: var(--inter-regular);
+  font-size: var(--h3-size);
   height: 1.3rem;
 }
 
 .line {
-  height: 4px;
+  height: 1.2px;
   width: 10%;
-  background-color: var(--dark-green);
+  background-color: var(--faded-green);
   margin-left: auto;
   transition: width 0.3s ease;
   border-radius: 20px;
@@ -30,9 +30,10 @@
 
 .nav-link a:hover + .line {
   width: 100%;
+  background-color: white;
 }
 
 .nav-link a:hover {
-  color: var(--dark-green);
+  color: white;
   transform: translateX(5px);
 }

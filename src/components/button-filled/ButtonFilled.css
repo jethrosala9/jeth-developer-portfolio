@@ -7,10 +7,11 @@
   background: none;
   overflow: hidden;
   cursor: pointer;
-  border: 2px solid transparent;
+  border: 2px solid rgba(255, 255, 255, 0.151);
   isolation: isolate;
   font-size: var(--a-size);
   background-color: #003619;
+  color: white;
   transition: border-color 0.35s ease;
   font-family: var(--inter-medium);
   letter-spacing: var(--letter-spacing2);
@@ -28,7 +29,7 @@
     transparent 100%
   );
   transform: translateX(-65%);
-  transition: transform 0.35s ease;
+  transition: transform 0.25s ease;
   top: 0%;
   right: 1rem;
   z-index: -1;
