@@ -93,9 +93,29 @@
   width: 1.8rem;
   height: 1.8rem;
   fill: currentColor;
-  transition: 0.3s ease;
+  transition: 0.25s ease;
 }
 
 .social-links a:hover .social-icon {
   fill: rgb(0, 189, 0);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-start;
+  width: 100%;
+  contain: inline-size;
+}
+
+.skill-card {
+  flex: 0 0 auto;
+  padding: 0.1rem 1rem;
+  background: #f1f4f2;
+  border-radius: 4rem;
+  color: #264b3a;
+  font-family: var(--inter-medium);
+  font-size: 1rem;
+  width: fit-content;
 }

@@ -28,6 +28,15 @@ function SideHeader() {
     { label: "Projects", link: "#" },
   ];
 
+  const skills = [
+    "CSS",
+    "3D Modelling",
+    "HTML",
+    "JavaScript",
+    "React JS",
+    "React Native",
+  ];
+
   return (
     <aside className="aside">
       <div className="hero">
@@ -47,6 +56,11 @@ function SideHeader() {
       <div className="nav-links">
         {labels.map(({ label, link }) => (
           <NavLink label={label} link={link} />
+        ))}
+      </div>
+      <div className="skills-container">
+        {skills.map((item) => (
+          <div className="skill-card">{item}</div>
         ))}
       </div>
       <div className="head-footer">
