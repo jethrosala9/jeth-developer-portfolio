@@ -96,12 +96,12 @@
   display: block;
   width: 1.8rem;
   height: 1.8rem;
-  fill: rgba(255, 255, 255, 0.233);
+  fill: var(--faded-green);
   transition: 0.25s ease;
 }
 
 .social-links a:hover .social-icon {
-  fill: rgb(0, 189, 0);
+  fill: white;
 }
 
 .skills-container {
@@ -135,4 +135,14 @@ hr {
   width: 100%;
   border: none;
   background: #cacaca33;
+}
+
+.work-status {
+  width: 100%;
+}
+
+.OTW {
+  margin: 0;
+  padding: 0;
+  font-family: var(--inter-semibold);
 }
