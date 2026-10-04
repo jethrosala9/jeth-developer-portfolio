@@ -2,7 +2,7 @@ import "./MainContent.css";
 
 function App() {
   return (
-    <div>
+    <div className="content-container">
       <section id="about">
         <h2>About</h2>
       </section>

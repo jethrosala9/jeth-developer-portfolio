@@ -2,6 +2,7 @@ import "./SideHeader.css";
 import NavLink from "../nav-link/NavLink.jsx";
 import HeroSvg from "../hero-svg/HeroSvg.jsx";
 import ButtonFilled from "../button-filled/ButtonFilled.jsx";
+import ArrowedLink from "../arrowed-link/ArrowedLink.jsx";
 import heroImage from "../../assets/hero-logo.png";
 import {
   LinkedInIcon,
@@ -44,6 +45,7 @@ function SideHeader() {
     "React JS",
     "React Native",
     "Hardware & Electronics",
+    "Embedded Systems",
   ];
 
   return (
@@ -75,6 +77,10 @@ function SideHeader() {
         ))}
       </div>
       <hr></hr>
+      <div className="work-status">
+        <h4 className="OTW">Open To Work</h4>
+        <ArrowedLink label="Resume" link="#" />
+      </div>
       <div className="head-footer">
         <div className="btn-cont">
           <ButtonFilled label="Let's Build" />
