@@ -3,7 +3,7 @@ import "./ArrowedLink.css";
 function ArrowedLink({ label, link }) {
   return (
     <div className="link-container">
-      <a href={link} className="link">
+      <a href={link} className="link" target="_blank" rel="noopener noreferrer">
         <span>{label}</span>
         <svg
           className="link-arrow"
