@@ -79,7 +79,7 @@ function SideHeader() {
       <hr></hr>
       <div className="work-status">
         <h4 className="OTW">Open To Work</h4>
-        <ArrowedLink label="Resume" link="#" />
+        <ArrowedLink label="Resume" link="/Jethro-Moses-Sala-Resume.pdf" />
       </div>
       <div className="head-footer">
         <div className="btn-cont">
