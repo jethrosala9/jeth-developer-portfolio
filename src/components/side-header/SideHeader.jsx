@@ -88,7 +88,12 @@ function SideHeader() {
         <ul className="social-links">
           {socialLinks.map(({ name, Icon, link }) => (
             <li key={name}>
-              <a href={link} aria-label={name} target="_blank">
+              <a
+                href={link}
+                aria-label={name}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon className="social-icon" />
               </a>
             </li>
