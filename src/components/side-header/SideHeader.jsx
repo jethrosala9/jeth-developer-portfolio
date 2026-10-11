@@ -34,7 +34,7 @@ function SideHeader() {
   const labels = [
     { label: "About", link: "#about" },
     { label: "Experience", link: "#experience" },
-    { label: "Projects", link: "#projects" },
+    { label: "Works", link: "#works" },
   ];
 
   const skills = [
