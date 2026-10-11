@@ -15,8 +15,8 @@ function MainContent() {
         <h2>Experience</h2>
       </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
+      <section id="works">
+        <h2>Works</h2>
       </section>
       <footer>
         <div className="github-activity">
